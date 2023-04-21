@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Valgusfoor.Valgusfoor">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <StackLayout x:Name="Container">
+
+                <Grid>
+
+                    <StackLayout 
+                         Orientation="Vertical"
+                         VerticalOptions="StartAndExpand"
+                         HorizontalOptions="CenterAndExpand">
+
+                        <Frame x:Name="redFrame" 
+                            BackgroundColor="Gray" 
+                            WidthRequest="100" 
+                            HeightRequest="100"
+                            CornerRadius="70"
+                            Margin="10"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label x:Name="redLabel" 
+                           Text="red" 
+                           TextColor="Black" 
+                           FontSize="15"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+                        <Frame x:Name="yellowFrame" 
+                            CornerRadius="70" 
+                            BackgroundColor="Gray"
+                            Margin="10"
+                            WidthRequest="100"
+                            HeightRequest="100"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label x:Name="yellowLabel" 
+                           Text="yellow" 
+                           TextColor="Black" 
+                           FontSize="15"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+
+                        <Frame x:Name="greenFrame" 
+                            CornerRadius="70" 
+                            BackgroundColor="Gray"
+                            Margin="10"
+                            WidthRequest="100" 
+                            HeightRequest="100"
+                            VerticalOptions="CenterAndExpand" 
+                            HorizontalOptions="CenterAndExpand">
+
+                            <Label x:Name="greenLabel" 
+                           Text="green" 
+                           TextColor="Black" 
+                           FontSize="15"
+                           HorizontalOptions="CenterAndExpand" 
+                           VerticalOptions="CenterAndExpand"/>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+
+            <Label x:Name="lbl3"
+                   Text="Switch on"
+                   FontSize="15"
+                   TextColor="Black"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <StackLayout 
+                Orientation="Horizontal" 
+                HorizontalOptions="FillAndExpand" 
+                VerticalOptions="End"
+                Spacing="20">
+
+                <Button x:Name="ButtonEnter"
+                        Text="Enter"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        Clicked="OnButtonEnterClicked"
+                        HorizontalOptions="StartAndExpand" 
+                        Margin="10"/>
+
+                <Button x:Name="ButtonBack"
+                        Text="Back"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        Clicked="OnButtonBackClicked"
+                        HorizontalOptions="CenterAndExpand" 
+                        Margin="10"/>
+
+                <Button x:Name="ButtonExit"
+                        Text="Exit"
+                        TextColor="Black"
+                        BackgroundColor="LightGray"
+                        Clicked="OnButtonExitClicked"
+                        HorizontalOptions="EndAndExpand" 
+                        Margin="10"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
